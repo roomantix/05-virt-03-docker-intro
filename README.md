@@ -187,3 +187,5 @@ docker-compose.yml
 по этому запустится файл compose.yaml
 ```
 
+Скриншот-9 к заданию 5.2
+![Скриншот 9](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/9.png)
