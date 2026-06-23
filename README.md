@@ -196,3 +196,25 @@ docker-compose.yml
 
 Скриншот-11 к заданию 5.6
 ![Скриншот 11](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/11.png)
+
+Скриншот-12 к заданию 5.7
+![Скриншот 12](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/12.png)
+
+
+```
+warning который мы получили при вводе команды docker compose up -d
+WARN[0000] Found orphan containers ([task5-portainer-1]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+что ранее запущенные контейнеры, больше не описаны в текущем Compose-файле и предупреждает, 
+что эти контейнеры не будут управляться текущим проектом
+
+После ввода команды docker compose up -d --remove-orphans
+
+portainer будет остановлен и удалён, а registry продолжит работать 
+
+Далее останавливаем одной командой весь проект
+
+docker compose down
+
+Так как portainer уже был удалён, останется только registry
+
+```
