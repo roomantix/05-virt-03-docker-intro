@@ -172,7 +172,18 @@ services:
 
 ### Ответ - Задание 5
 
+Скриншот-8 к заданию 5.1
+![Скриншот 8](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/8.png)
+
+```
+Согласно официальной документации Docker-compose
+ищет файлы с ледующем порядке
+
+compose.yaml
+compose.yml
+docker-compose.yaml
+docker-compose.yml
+
+по этому запустится файл compose.yaml
 ```
 
-
-```
