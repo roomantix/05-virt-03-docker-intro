@@ -189,3 +189,6 @@ docker-compose.yml
 
 Скриншот-9 к заданию 5.2
 ![Скриншот 9](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/9.png)
+
+Скриншот-10 к заданию 5.3
+![Скриншот 10](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/10.png)
