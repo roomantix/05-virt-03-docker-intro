@@ -49,7 +49,7 @@ https://hub.docker.com/repository/docker/roomantix/custom-nginx/general
 ### Ответ - Задание 2
 
 Скриншот-1 к заданию 2
-![к заданию 2](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/1.png)
+![Скриншот 1](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/1.png)
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
@@ -70,10 +70,37 @@ https://hub.docker.com/repository/docker/roomantix/custom-nginx/general
 
 ### Ответ - Задание 3
 
+
+Скриншот-2 к заданию 3.3
+![Скриншот 2](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/2.png)
+
+```
+Комбинация Ctrl+C отправила сигнал SIGINT основному процессу (PID 1) в контейнере nginx и он завершился перейдя в статус exited,
+произошло это по тому что жизненный цикл определяется основным процессом.
+
+```
+Скриншот-3, Скриншот-4 и Скриншот-5 к заданиям 
+3.4 - 3.10
+
+![Скриншот 3](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/3.png)
+
+![Скриншот 4](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/4.png)
+
+![Скриншот 5](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/5.png)
+
+```
+ss -tlpn покажет, что порт 8080 на 127.0.0.1 слушает процесс docker-proxy, который пробрасывает трафик в контейнер на порт 80.
+
+docker port custom-nginx-t2 выведет 80/tcp -> 127.0.0.1:8080 — явное указание, что запросы с хоста на 8080 идут на 80-й порт контейнера.
+
+curl http://127.0.0.1:8080 завершился ошибкой, потому что внутри контейнер nginx больше не слушает порт 80 мы его поменяли, а проброс направляет трафик именно на 80, по этому внутри контейнера сбрасывается соединение.
+
 ```
 
+Скриншот-6 к заданию 3-12
+![Скриншот 6](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/6.png)
 
-```
+
 
 ## Задача 4
 
