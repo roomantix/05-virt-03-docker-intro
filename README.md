@@ -49,7 +49,7 @@ https://hub.docker.com/repository/docker/roomantix/custom-nginx/general
 ### Ответ - Задание 2
 
 Скриншот-1 к заданию 2
-![к заданию 2](https://github.com/roomantix/05-virt-03-docker-intro/tree/main/img/1.png)
+![к заданию 2](https://github.com/roomantix/05-virt-03-docker-intro/blob/main/img/1.png)
 
 ## Задача 3
 1. Воспользуйтесь docker help или google, чтобы узнать как подключиться к стандартному потоку ввода/вывода/ошибок контейнера "custom-nginx-t2".
